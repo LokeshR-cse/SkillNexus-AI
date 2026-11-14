@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillNexus AI | Career Intelligence</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">SkillNexus <span>AI</span></div>
+        <nav>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#analysis">Skill Analysis</a>
+            <a href="#roadmap">Roadmap</a>
+        </nav>
+        <div class="profile">LR</div>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+            <div>
+                <p class="tag">YOUR AI CAREER COMPANION</p>
+                <h1>Build skills.<br><span>Shape your future.</span></h1>
+                <p class="subtitle">
+                    Discover your skill gaps and follow an intelligent
+                    learning journey designed around your career goals.
+                </p>
+            </div>
+            <div class="hero-icon">✦</div>
+        </section>
+
+        <section class="profile-section" id="dashboard">
+            <h2>Personalize Your Journey</h2>
+
+            <div class="form-grid">
+                <div>
+                    <label>Your Name</label>
+                    <input id="studentName" type="text" placeholder="Enter your name">
+                </div>
+
+                <div>
+                    <label>Target Career</label>
+                    <select id="career">
+                        <option value="Full Stack Developer">Full Stack Developer</option>
+                        <option value="Frontend Developer">Frontend Developer</option>
+                        <option value="Data Analyst">Data Analyst</option>
+                        <option value="Cybersecurity Analyst">Cybersecurity Analyst</option>
+                        <option value="AI Engineer">AI Engineer</option>
+                    </select>
+                </div>
+
+                <div class="full">
+                    <label>Existing Skills (comma separated)</label>
+                    <input id="skills" type="text"
+                        placeholder="Example: HTML, CSS, Python, SQL">
+                </div>
+
+                <div class="full">
+                    <label>Completed Projects</label>
+                    <input id="projects" type="text"
+                        placeholder="Example: Portfolio website">
+                </div>
+            </div>
+
+            <button id="analyzeBtn">✦ Analyze My Career</button>
+        </section>
+
+        <section class="agents-section" id="analysis">
+            <h2>Meet Your AI Agent Team</h2>
+            <p class="section-subtitle">
+                Four specialized agents working together for your future.
+            </p>
+
+            <div class="agent-grid">
+                <div class="agent-card">
+                    <div class="agent-icon">◈</div>
+                    <h3>Skill Analyst</h3>
+                    <p>Identifies your strengths and missing skills.</p>
+                    <span id="agent1">Waiting for analysis</span>
+                </div>
+
+                <div class="agent-card">
+                    <div class="agent-icon">◎</div>
+                    <h3>Career Matcher</h3>
+                    <p>Compares your profile with career requirements.</p>
+                    <span id="agent2">Waiting for analysis</span>
+                </div>
+
+                <div class="agent-card">
+                    <div class="agent-icon">✧</div>
+                    <h3>Roadmap Planner</h3>
+                    <p>Builds your personalized learning journey.</p>
+                    <span id="agent3">Waiting for analysis</span>
+                </div>
+
+                <div class="agent-card">
+                    <div class="agent-icon">✦</div>
+                    <h3>AI Mentor</h3>
+                    <p>Adapts recommendations based on your results.</p>
+                    <span id="agent4">Waiting for analysis</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="results-section" id="results">
+            <h2>Your Career Intelligence Report</h2>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <p>Matched Skills</p>
+                    <h3 id="matchedCount">0</h3>
+                </div>
+
+                <div class="stat-card">
+                    <p>Missing Skills</p>
+                    <h3 id="missingCount">0</h3>
+                </div>
+
+                <div class="stat-card">
+                    <p>Career Readiness</p>
+                    <h3 id="readiness">0%</h3>
+                </div>
+            </div>
+
+            <div class="report-grid">
+                <div class="report-card">
+                    <h3>✓ Your Strengths</h3>
+                    <div id="strengths">Analyze your profile first.</div>
+                </div>
+
+                <div class="report-card">
+                    <h3>✦ Skills to Develop</h3>
+                    <div id="gaps">Your skill gaps will appear here.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="roadmap-section" id="roadmap">
+            <h2>Your Personalized Roadmap</h2>
+            <p class="section-subtitle">
+                Complete learning missions to move closer to your career.
+            </p>
+
+            <div id="roadmapContent">
+                <p class="empty">Your roadmap will appear after analysis.</p>
+            </div>
+        </section>
+
+        <section class="assessment-section">
+            <h2>Proof-of-Skill Assessment</h2>
+            <p class="section-subtitle">
+                Test your understanding and let your AI Mentor adapt your path.
+            </p>
+
+            <label for="assessment">How well did you understand your latest learning mission?</label>
+            <select id="assessment">
+                <option value="excellent">Excellent – I can apply it myself</option>
+                <option value="average">Average – I need more practice</option>
+                <option value="poor">Difficult – I need to relearn it</option>
+            </select>
+
+            <button id="evaluateBtn">Evaluate My Progress</button>
+            <div id="mentorFeedback"></div>
+        </section>
+
+        <footer>
+            <h3>SkillNexus AI</h3>
+            <p>Learn intelligently. Grow confidently. Build your future.</p>
+            <p>Hackathon Project | Built by Lokesh R</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
